@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter API Key</title>
+</head>
+<body>
+    <h1>Enter your OpenAI API key</h1>
+    <form action="{{ url_for('set_api_key') }}" method="post">
+        <input type="text" name="api_key" placeholder="Paste your API key here" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
